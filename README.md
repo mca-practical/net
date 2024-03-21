@@ -1,2 +1,1 @@
-# net
-all .Net practicals
+:)
