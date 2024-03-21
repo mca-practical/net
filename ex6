@@ -1,0 +1,61 @@
+using System;
+using System.Collections;
+class Program
+{
+public static void Main()
+{
+Hashtable phoneBook = new Hashtable();
+while(true)
+{
+Console.WriteLine("\n ###########Phonebook###########");
+Console.WriteLine("\t1: Add number to phone book");
+Console.WriteLine("\t2: Get number to phonebook");
+Console.WriteLine("\t3: Exit");
+Console.WriteLine("\n###################");
+Console.WriteLine("\n\nEnter choice:");
+int choice = Convert.ToInt32(Console.ReadLine());
+switch (choice)
+{
+case 1:
+{
+long number = 0;
+String name = "";
+Console.Write("Enter your name:");
+name = Console.ReadLine();
+Console.Write("Enter your phone number:");
+number = Convert.ToInt64(Console.ReadLine());
+phoneBook.Add(name, number);
+}
+break;
+case 2:
+{
+long number = 0;
+String name = "";
+Console.Write("Enter your name:");
+name = Console.ReadLine();
+if (phoneBook[name] == null)
+{
+Console.WriteLine("Given name is not found in phonebook");
+}
+Else
+{
+number = Convert.ToInt64(phoneBook[name]);
+Console.WriteLine("Name:" + name + ",phone number:" + number);
+}
+}
+break;
+case 3:
+{
+Console.WriteLine("\nThank you for using phonebook");
+}
+break;
+default:
+{
+Console.WriteLine("\n You have entered wrong choice");
+}
+break;
+}
+Console.ReadKey();
+}
+}
+}

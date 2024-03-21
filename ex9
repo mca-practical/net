@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+namespace zipoperator
+{
+public partial class Form1:Form
+{
+public Form1()
+{
+InitializeComponent();
+}
+Private void button1_Click(object sender, EventArgs e)
+{
+string[] names = newstring[] {"Ram", "priya", "Rita", "Johncy", "Steve"};
+string[] position=newstring[] {"Manager", "Team Leader", "Developers", "writer", "Director"};
+int[] years=new int[] {1,2,3,8,9};
+var query1=names.Zip(position,(a,b)=>a+ " is the " +b+ " of the company ");
+var query2=query1.Zip(years, (c,d)=>c+ " with " +d+ " years of experience. ");
+foreach(var result in query2)
+{
+listBox1.Items.Add(result);
+}
+}
+}
+}
+

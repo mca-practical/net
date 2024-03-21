@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using System.Threading.Tasks;
+namespace linq
+{
+class Student
+{
+public int Regno;
+public string Name;
+}
+class Program
+{
+static DataTableGetDataTable(Student[] student)
+{
+DataTable table= new DataTable();
+table.Columns.Add("Reg no", typeof(Int32));
+table.Columns.Add("Name", typeof(string));
+foreach(Student s in students)
+{
+table.Rows.Add(s.Regno, s.Name);
+}
+return (table);
+}
+Static void Output DataTableHeader(DataTable dt, intColumnwidth)
+{
+string format=string.Format("{0}0, -{1}{2}", "{",Columnwidth, "}");
+foreach (DataColumn c in dt.Columns)
+{
+Console.Write(format,c.ColumnName);
+}
+Console.WriteLine();
+foreach (DataColumn c in dt.Columns)
+{
+for (int i=0; i<Columnwidth; i++)
+{
+Console.Write("=");
+}
+}
+Console.WriteLine();
+}
+static void Main(String[] args)
+{
+Student[] students={
+New Student{Regno=1, Name="Aarthi"},
+New Student{Regno=2, Name="Babi"},
+New Student{Regno=3, Name="Chinnu"},
+New Student{Regno=4, Name="Divya"},
+New Student{Regno=5, Name="Esther"},
+New Student{Regno=6, Name="France"},
+};
+DataTable dt=GetDataTable(students);
+Console.WriteLine("{0}Result{0}",System.Environment.NewLine);
+OutputDataTableHeader(dt,15);
+foreach(DataRow dr in dt.Rows)
+{
+Console.WriteLine("{0,-15}{1,-15}",
+dr.Field<int>(0),
+dr.Field<string>(1));
+}
+Console.ReadLine();
+}
+}
+}

@@ -1,0 +1,18 @@
+<?xmlversion="1.0" encoding="utf-8" ?>
+<siteMapxmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+<siteMapNode url="" title="Higher Studies" description="Higher Studies">
+<siteMapNode url="" title="Universities" description="">
+<siteMapNode url="https://www.msuniv.ac.in/"title="MS University" description="" />
+<siteMapNode url="https://mkuniversity.ac.in/new/"title="Madurai Kamaraj" description=""
+/>
+<siteMapNode url="https://www.b-u.ac.in/"title="Bharathiar University” description="" />
+<siteMapNode url="https://www.annauniv.edu/"title="Anna University" description="" />
+</siteMapNode>
+<siteMapNode url=""title="Colleges" description="">
+<siteMapNode url="https://scott.ac.in/"title="Scott Christian College" description=""/>
+<siteMapNode url="https://wcc.edu.in/"title="WCC" description="" />
+<siteMapNode url="http://www.hcctrichy.ac.in/"title="Holy Cross" description="" />
+<siteMapNode url="http://bhc.edu.in/"title="Bishop Heber" description="" />
+</siteMapNode>
+</siteMapNode>
+</siteMap>

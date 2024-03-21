@@ -1,0 +1,23 @@
+<?xmlversion="1.0"encoding="utf-8" ?>
+<ComputerPheripherals>
+<ComputerPeripherals S.No="1" Productcode="M100" ProductName="Monitor"
+Brand="Dell" Rate="10,000" Stockinhand="15"/>
+<ComputerPeripheralsS.No="2"Productcode="K100"
+ProductName="keyboard"Brand="HP"Rate="500"Stockinhand="30"/>
+<ComputerPeripheralsS.No="3"Productcode="C100"ProductName="CPU"Brand="Dell"Rat
+e="12,000"Stockinhand="20"/>
+<ComputerPeripheralsS.No="4"Productcode="M200"ProductName="Mouse"Brand="MS"R
+ate="300"Stockinhand="100"/>
+<ComputerPeripheralsS.No="5"Productcode="P100"ProductName="Printer"Brand="Canon"
+Rate="25,000"Stockinhand="18"/>
+<ComputerPeripheralsS.No="6"Productcode="S100"ProductName="Scanner"Brand="Canon
+"Rate="700"Stockinhand="19"/>
+<ComputerPeripheralsS.No="7"Productcode="P200"ProductName="Pendrive"Brand="HP"R
+ate="1000"Stockinhand="200"/>
+<ComputerPeripheralsS.No="8"Productcode="C200"ProductName="cardriver"Brand="Dell"
+Rate="25,000"Stockinhand="50"/>
+<ComputerPeripheralsS.No="9"Productcode="L100"ProductName="Laptop"Brand="HP"Ra
+te="10,000"Stockinhand="25"/>
+<ComputerPeripheralsS.No="10"Productcode="W100"ProductName="webcom"Brand="Can
+on"Rate="1,500"Stockinhand="60"/>
+</ComputerPheripherals>

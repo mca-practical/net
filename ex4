@@ -1,0 +1,26 @@
+<Windowx:Class="UsingXAML.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="binding using the path property" Height="350" Width="525">
+<Grid Name="grd"DataContext="{BindingElementName=mclistbox, Path=SelectedItem}">
+<TextBlock Margin="0,0,20,131"FontWeight="Bold">
+pick a color from below list
+</TextBlock>
+<ListBox Name="mclistbox" Height="100" Width="100"
+Margin="28,46,0,0"HorizontalAlignment="Left"VerticalAlignment="Top">
+<ListBoxItem>Orange</ListBoxItem>
+<ListBoxItem>Green</ListBoxItem>
+<ListBoxItem>Blue</ListBoxItem>
+<ListBoxItem>Gray</ListBoxItem>
+<ListBoxItem>LightGray</ListBoxItem>
+<ListBoxItem>Red</ListBoxItem>
+</ListBox>
+<Ellipse Height="100" Name="ellipse1"DataContext="{Binding
+ElementName=mclistbox}" Stroke="black" Margin="0,46,198,0"VerticalAlignment="Top"
+HorizontalAlignment="Right" Width="116">
+<Ellipse.Fill>
+<BindingElementName="mclistbox" Path="SelectedItem.Content"/>
+</Ellipse.Fill>
+</Ellipse>
+</Grid>
+</Window>

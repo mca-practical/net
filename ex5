@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+namespace duplicate
+{
+public partial class Form1:Form
+{
+public Form1()
+{
+InitializeComponent();
+}
+Private void button1_Click(object sender, EventArgs e)
+{
+int[] val = new int[7];
+for (int index = 0; index < 7; index++)
+{
+val[index] = Convert.ToInt32(listBox1.Items[index]);
+}
+vardist = (from v in val select v).Distinct();
+listBox2.Items.Clear();
+foreach (int v indist)
+{
+listBox2.Items.Add(v);
+}
+}
+Private void Form1_Load(object sender, EventArgs e)
+{
+int[] doubles={121,200,200,347,400,522,522};
+foreach(intiin doubles)
+{
+listBox1.Items.Add(i.ToString());
+}
+}
+}

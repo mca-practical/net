@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<course>
+<homepage title="UG Courses" url="default.aspx">
+<subpage title="BCA" url="bca.aspx"></subpage>
+<subpage title="BBA" url="b.sc.aspx"></subpage>
+<subpage title="B.Com" url="b.com.aspx"></subpage>
+</homepage>
+<homepage title="PG Courses" url="default.aspx">
+<subpage title="MCA" url="mca.aspx"></subpage>
+<subpage title="MBA" url="m.sc.aspx"></subpage>
+<subpage title="M.Com" url="m.com.aspx"></subpage>
+</homepage>
+</course>
